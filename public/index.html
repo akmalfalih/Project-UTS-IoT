@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-100 h-screen">
+
+    <h1 class="text-center text-4xl pt-5 bg-blue-700 text-white font-bold lg:text-5xl lg:pt-7">Smart Rooftop</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path class="scale-y-50" fill="#1d4ed8" fill-opacity="1" d="M0,160L30,170.7C60,181,120,203,180,186.7C240,171,300,117,360,101.3C420,85,480,107,540,128C600,149,660,171,720,154.7C780,139,840,85,900,80C960,75,1020,117,1080,165.3C1140,213,1200,267,1260,245.3C1320,224,1380,128,1410,80L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+
+    <section>
+        <div class="flex flex-col items-center justify-center gap-y-6 text-center py-4 md:flex-row md:gap-x-3 md:mt-8 md:pb-8 lg:py-1 lg:mt-2 lg:justify-evenly">
+            <div class="bg-blue-700 rounded-xl w-72 h-32 md:h-40 lg:w-96 lg:h-48 shadow-md">
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white">Cuaca</p>
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white" id="cuaca">-</p>
+            </div>
+            <div class="bg-blue-700 rounded-xl w-72 h-32 md:h-40 lg:w-96 lg:h-48 shadow-md">
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white">Waktu</p>
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white" id="waktu">-</p>
+            </div>
+            <div class="bg-blue-700 rounded-xl w-72 h-32 md:h-40 lg:w-96 lg:h-48 shadow-md">
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white">Posisi Rooftop</p>
+                <p class="mt-5 md:mt-8 lg:text-2xl text-xl text-white" id="posisi">-</p>
+            </div>
+          </div>
+    </section>
+
+    <section class="mt-5 md:mt-10 lg:mt-14">
+        <div class="flex flex-row text-center py-2 justify-center gap-x-5">
+            <div class="basis-1/3">
+                <button type="button" id="servoIn" class="bg-blue-700 text-xl lg:text-2xl w-36 h-20 rounded-full text-white px-1 hover:bg-blue-800 hover:shadow-lg hover:shadow-blue-200">IN</button>
+            </div>
+            <div class="basis-1/3">
+                <button type="button" id="servoOut" class="bg-blue-700 text-xl lg:text-2xl w-36 h-20 rounded-full text-white px-1 hover:bg-blue-800 hover:shadow-lg hover:shadow-blue-200">OUT</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="fixed bottom-0 justify-center items-center w-screen">
+        <p class="text-center text-white bg-blue-700 py-2">ini footer</p>
+    </footer>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
